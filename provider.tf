@@ -9,7 +9,8 @@ terraform {
     bucket = "linga-devops-rs"
     key    = "shell-script-ec2"
     region = "us-east-1"
-    dynamodb_table = "linga-devops-locking"
+    #dynamodb_table = "roboshop13-locking"
+    use_lockfile = true
     }
   }
 provider "aws" {
